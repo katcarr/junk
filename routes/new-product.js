@@ -6,5 +6,9 @@ Junk.NewProductRoute = Ember.Route.extend({
       products.pushObject(product);
     });
     return product;
+  },
+
+  renderTemplate: function() {
+    this.render({ outlet: 'new-product' });
   }
 });
