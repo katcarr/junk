@@ -1,9 +1,9 @@
 <h3>Product Page For {{name}}'s Collection</h3>
 
-{{#each product in products}}
+{{#each product in products itemController='product'}}
 
   <p>
-    {{product.name}}
+    {{product.name}} <button class="btn btn-xs btn-danger" {{action 'delete'}}>Kill</button>
   </p>
 
 {{/each}}
