@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All your junk</title>
+    <link rel="stylesheet" href="/css/bootstrap-paper.css">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <script src="libs/jquery-1.11.2.js"></script>
+    <script src="http://builds.emberjs.com/tags/v1.10.0/ember-template-compiler.js"></script>
+    <script src="libs/ember.debug.js"></script>
+    <script src="libs/ember-handlebars-loader-0.0.2.js"></script>
+    <script src="libs/ember-data-1.0.0-beta.15.js"></script>
+    <script src="libs/localstorage-adapter-0.5.1.js"></script>
+
+    <script src="junk.js"></script>
+    <script src="router.js"></script>
+    <script src="store.js"></script>
+
+
+    <script src="controllers/new-lot.js"></script>
+    <script src="controllers/product.js"></script>
+    <script src="controllers/new-product.js"></script>
+
+    <script src="routes/lots.js"></script>
+    <script src="routes/lot.js"></script>
+    <script src="routes/new-product.js"></script>
+
+    <script src="models/lot.js"></script>
+    <script src="models/product.js"></script>
+
+
+
+
+    <script>
+      EmberHandlebarsLoader.loadTemplates(['application', 'lots', 'new-lot', 'lot', 'new-product']);
+    </script>
+
+  </head>
+  <body>
+  </body>
+</html>

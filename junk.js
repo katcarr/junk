@@ -1,0 +1,1 @@
+Junk = Ember.Application.create();

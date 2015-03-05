@@ -1,0 +1,9 @@
+<h1>Junk</h1>
+
+<ul>
+  {{#each lot in model}}
+  <li>{{#link-to 'lot' lot}}{{lot.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{#link-to 'new-lot'}}New lot{{/link-to}}

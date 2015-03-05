@@ -1,0 +1,14 @@
+<h3>Product Page For {{name}}'s Collection</h3>
+
+{{#each product in products}}
+
+  <p>
+    {{product.name}}
+  </p>
+
+{{/each}}
+
+<p>{{#link-to 'new-product' this class="btn btn-default"}}Add Product{{/link-to}}</p>
+
+
+{{outlet}}

@@ -1,0 +1,9 @@
+<h2>New product</h2>
+
+<form>
+  <div class="form-group">
+    <label for="name">Name</label>
+    {{input value=name id="text" class="form-control"}}
+  </div>
+  <button class="btn btn-danger" {{action 'save'}}>Add Product</button>
+</form>
