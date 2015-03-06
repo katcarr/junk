@@ -2,9 +2,11 @@
 
 {{#link-to 'new-lot'}}New lot{{/link-to}}
 
+{{outlet}}
+
 <ul class="list-unstyled">
   {{#each lot in model itemController='lot'}}
   <li class="well col-sm-3 lots">
-    {{#link-to 'lot' lot}}{{lot.name}}{{/link-to}} <button class="btn btn-xs btn-default" {{action 'delete'}}>Remove</button> </li>
+    {{#link-to 'lot' lot}}{{lot.name}}{{/link-to}} <br><button class="btn btn-xs btn-default" {{action 'delete'}}>Remove</button> </li>
   {{/each}}
 </ul>

@@ -9,13 +9,16 @@
 <div class="col-sm-5">
 
   {{#each product in products }}
+
+    {{#if product.image}}
       <p>
       <span class="thumb">
         {{#link-to "product" product}}<img {{bind-attr src=product.image}}>{{/link-to}}
       </span>
         {{product.name}}<button class="btn btn-xs btn-default" {{action 'deleteProduct' product}}>remove</button>
       </p>
-
+    {{/if}}
+    
   {{/each}}
 
 </div>

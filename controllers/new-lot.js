@@ -5,6 +5,7 @@ Junk.NewLotController = Ember.Controller.extend({
         name: this.get('name')
       });
       newLot.save();
+      this.set('name', null);
       this.transitionToRoute('lots');
     }
   }
